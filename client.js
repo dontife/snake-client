@@ -11,9 +11,6 @@ conn.on('connect', () => {
   console.log('Sucessfully connected to game server');
   conn.write('Name: NAD');
   //conn.write('Move: up');
-  
-
-
 })
 conn.on('data', (data) => {
   console.log('Server says : ', data);
