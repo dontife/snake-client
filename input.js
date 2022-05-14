@@ -23,6 +23,9 @@ const handleUserInput = function (key) {
   }if(key === 'd'){
     connection.write('Move: right')
   }
+  if (key == 'q'){
+    connection.write('Say: yum');
+  }
   if (key === '\u0003') {
     process.exit();
   }
